@@ -137,7 +137,7 @@
 
 	<profiles>
 		<profile>
-			<id>cobertura</id>
+			<id>quality</id>
 			<build>
 				<plugins>
 					<plugin>
@@ -161,9 +161,6 @@
 					</plugin>
 				</plugins>
 			</build>
-		</profile>
-		<profile>
-			<id>pmd</id>
 			<reporting>
 				<plugins>
 					<plugin>
@@ -180,13 +177,6 @@
 							</excludeRoots>
 						</configuration>
 					</plugin>
-				</plugins>
-			</reporting>
-		</profile>
-		<profile>
-			<id>findbugs</id>
-			<reporting>
-				<plugins>
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>findbugs-maven-plugin</artifactId>

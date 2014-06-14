@@ -33,8 +33,8 @@ public class MessageRepositoryTest {
 		
 		messageRepository.save(message);
 		
-		List<Message> messages = messageRepository.findByMessageAuthor("test_user");
-		
+		List<Message> messages = messageRepository.findByMessageAuthor("test_user");		
+		assertNotNull(messages);
 		assertFalse(messages.isEmpty());
 		assertEquals(1, messages.size());
 	}

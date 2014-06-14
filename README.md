@@ -1,7 +1,7 @@
 forumapp
 ========
 
-Spring PostgreSQL Demo Application
+An OpenShift application
 
 
 ```

@@ -35,6 +35,7 @@ public class MessageRepositoryTest {
 		
 		List<Message> messages = messageRepository.findByMessageAuthor("test_user");
 		
+		assertFalse(messages.isEmpty());
 		assertEquals(1, messages.size());
 	}
 

@@ -39,4 +39,20 @@ public class MessageRepositoryTest {
 		assertEquals(1, messages.size());
 	}
 
+	
+	@Test
+	public void testFindByAll() {
+		
+		Message message1 = new Message("test_user", "msg1");
+		Message message2 = new Message("test_user", "msg2");
+		Message message3 = new Message("test_user", "msg3");
+		
+		messageRepository.save(message1);
+		messageRepository.save(message2);
+		messageRepository.save(message3);
+		
+		List<Message> messages = messageRepository.findAll();		
+		assertEquals(3, messages.size());
+	}
+
 }
